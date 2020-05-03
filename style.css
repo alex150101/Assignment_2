@@ -1,0 +1,221 @@
+/*this is the setting of the text in the body*/
+body {
+  text-align: center;
+  text-shadow: 0 1px 0px rgba(0,0,0,.5);
+}
+/*this is the settings of the text in the body*/
+header {
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.3;
+  padding-bottom: 15px;
+  text-align: center;
+}
+/*this is the setting image size*/
+.circles img {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  background: url(images/Picture1.jpg.jpg) no-repeat;
+}
+/*this is the setting the position where the circle image will be on the site*/
+.circles {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  transition: opacity .25s ease-in-out;
+  text-align: center;
+}
+/*this is the setting for the text in the h3 class*/
+h3 {
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+/*this is the setting for the text in the h4 class*/
+h4 {
+  font-size: 1.5rem;
+  color: rgb(33, 33, 139);
+  text-align: center;
+}
+/*this is the setting for the text in the p class*/
+p {
+  font-size: 16px;
+  line-height: 1.5;
+font-weight: 400;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+color: #000000;
+}
+/*this is the setting for the text in the i class*/
+i {
+padding: 15px;
+font-family: 'Open Sans', sans-serif;
+color: rgb(33, 33, 139);
+}
+/*this is the setting for the text in the h3 class*/
+.links li a .i {
+  font-size: 75px;
+  text-decoration: none;
+  height: 10px;
+  margin-top: 1rem;
+  text-align: center;
+}
+/*this is the setting for the hover for the link*/
+a:hover {
+  text-decoration: none; 
+}
+/*this is the setting for the how the links are placed together on the screen*/
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+/*this is the setting for the how the link are seperated on the screen*/
+.links li {
+  display: inline;
+  padding: 0;
+  margin: 2 rem;
+  white-space: nowrap;
+  list-style-type: none;
+  opacity: 0.2;
+  padding: 1 rem;
+}
+/*this is the setting for the how the link are hover over by the mouse*/
+.links li:hover {
+  opacity: 2;
+}
+/*this is the setting for the text in the h3 class*/
+h1 {
+  color: #000000;
+  letter-spacing: 1px;
+  font-size: 40px;
+  width: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+/*navigation css reference https://codepen.io/chrishammond/pen/rLJPzK*/
+/*this is the setting for the how the navigation is place on the screen */
+nav {
+ box-sizing: border-box;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ padding: 20px 60px;
+ text-align: center;
+ background-color: #fff;
+ font-size: 18px;
+ letter-spacing: 1px;
+ font-family: 'Open Sans', sans-serif;
+}
+/*this is the setting for the how the navigation's text is*/
+a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #eee;
+  padding: 1px 0;
+  margin: 0 10px;
+  transition: all 0.15s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+}
+/*this is the setting for which colour is used when it's hoverd by the mouse for the navigation */
+.hov-color:hover {
+   color: #000000;
+}
+/*this is the setting for how each screen is repersented*/
+.wide {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 80px 60px 80px 60px;
+  min-height: 100vh;
+}
+/*this is the setting for which colour is for screen 1*/
+#screen1 {
+  background-color: #81D4FA;
+}
+/*this is the setting for which colour is for screen 2*/
+#screen2 {
+  background-color: #4FC3F7;
+}
+/*this is the setting for which colour is for screen 3*/
+#screen3 {
+  background-color: #5acbff;
+}
+/*this is the setting for which colour is for screen 4*/
+#screen4{
+  background-color: #03A9F4;
+}
+/*this decides where gallery is in the web page*/
+.gallery-item {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: all .3s;
+  overflow: hidden;
+  position: relative;
+}
+/*this is how the gallary is laid on the web page*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+  grid-auto-rows: minmax(150px, auto);
+}
+/*this serperates the images in gallery*/
+.image { 
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/*this decides how the image shown in  the gallary*/
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*this decides how the text appears on the images */
+.gallery-item:hover .image {
+  filter: grayscale(1);
+}
+/*this gives the image a filter when it is hovered over*/
+.gallery-item:hover .middle {
+  opacity: 1;
+}
+/*this says there can only be one text per grid*/
+.gallery-item:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+/*this gives the image a box shadow when it is hovered over*/
+.text {
+  color: white;
+  font-size: 2.5em;
+    padding: 16px 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+/*this makes that the text on the grid gallery a certain size, colour and front*/
+@media (max-width: 500px) { 
+  .gallery-item,body {
+    max-width: 30%;
+    grid-column: 2;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+  }
+  
+  div.container, h1 {
+    text-align: left;
+    margin-left: 2em;
+  }
+
+  div.text {
+    font-size: 2.5em;
+  }
+}

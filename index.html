@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--this makes the web page responsive-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio Site</title> <!--this is the title of my code-->
+    <link rel="stylesheet" href="style.css"> <!--this connects the html to the css page--> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"><!--this connects the html to the fronts of the webpage-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous"><!--linked to front awesome for the icons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous"><!--link to bootstap-->
+  </head>
+  <body>
+    <nav id="navigation"> 
+      <a data-scroll class="hov-color" href="#screen1">home</a> <!--sets the hover colour and the references the sections-->
+      <a data-scroll class="hov-color" href="#screen2">portfolio</a>
+      <a data-scroll class="hov-color" href="#screen3">contact</a>
+      <a data-scroll class="hov-color" href="#screen4">cv</a>
+    </nav>
+       <section id="screen1" class="wide" > <!--connect to the css that set the section setting and show where section one is-->
+     <div class="container-fluid"></div> <!--bootstrap css container-->
+        <div class="circles"><img src="Images/Picture1.jpg" id="profilePic" alt="profilePic"></div> <!--bootstrap css container that shows the image in the -->
+        <header> <!--this connect to the heading css-->
+          <h1>Hello there! I'm Alex White </h1> <!--heading text for the hompage-->
+          <h2>This is my Portfolio Site</h2> <!--smaller heading-->
+            <p><h4> This is were you find my previous projects</p> <!--paragraph-->
+          <a href="https://www.northampton.ac.uk/"></a> <!--link to the university of northampton-->
+            <p>And I'm currently a Computing student @ UoN </p> </h4><!--paragraph-->
+        </header>  <!--ending the heading css-->
+     </section><!--tells it where this section ends-->
+     <section id="screen2" class="wide">  <!--connect to the css that set the section setting and show where section one is-->
+      <header><h1>My portfolio</h1> </header> <!--heading text for the section-->
+     <div class="gallery"> <!--connect to the class in the css-->  
+      <div class="gallery-item"> <!--connect to the class in the css-->  
+               <img src="Images/todo_list.jpg" alt="Placeholder Image" class="image"><!--this links to the image in my folder and it appears on the web page-->
+        <div class="middle"> <!--connect to the class in the css-->  
+          <div class="text">Todo list</div> <!--connect to the class in the css-->  
+        </div>
+      </div>  
+      <div class="gallery-item"> <!--connect to the class in the css-->  
+               <img src="Images/random_quotes.jpg" alt="Placeholder Image" class="image"><!--this links to the image in my folder and it appears on the web page-->
+      
+        <div class="middle"> <!--connect to the class in the css-->  
+          <div class="text">random quotes generator</div> <!--connect to the class in the css-->  
+        </div>
+      </div>  
+      <div class="gallery-item"> <!--connect to the class in the css-->  
+               <img src="Images/weather_app.jpg" alt="Placeholder Image" class="image"><!--this links to the image in my folder and it appears on the web page-->
+      
+        <div class="middle"> <!--connect to the class in the css-->  
+          <div class="text">weather app</div> <!--connect to the class in the css-->  
+        </div>
+      </div>     
+      <div class="gallery-item"> <!--connect to the class in the css-->  
+               <img src="Images/Assignment_1.jpg" alt="Placeholder Image" class="image"><!--this links to the image in my folder and it appears on the web page-->
+      
+        <div class="middle"> <!--connect to the class in the css-->  
+          <div class="text">My first Portfolio</div> <!--connect to the class in the css-->  
+        </div>
+      </div>
+      
+      <div class="gallery-item"> <!--connect to the class in the css-->  
+               <img src="Images/Starter_landing_page.jpg" alt="Placeholder Image" class="image"><!--this links to the image in my folder and it appears on the web page-->
+      
+        <div class="middle"> <!--connect to the class in the css-->  
+          <div class="text">Starter landing plage</div> <!--connect to the class in the css-->      
+     </section><!--tells it where this section ends-->
+     <section id="screen3" class="wide"><!--connect to the css that set the section setting and show where section one is-->
+          <header><h1>My contact</h1>   <!--heading text for the section-->
+                <h2>Phone:</h2><p>+44 123 456 789</p><!--paragraphs and titles-->
+                <h2>Email:</h2><p>alexwhite15012001@gmail.com</p><!--paragraph and titles--->
+                <h2>Address:</h2> <p>Hardingson, Northampton </p><!--paragraph and titles--->
+                <p>Northamptonshire, Britain</p><!--paragraph-->
+                         <p>NN4 6DA</p><!--paragraph-->
+                         </header><!--this connect to the heading css-->
+                         <div class="hero"> <!--connect to bootstrap-->
+                          <div class="container"><!--connect to bootstrap-->
+                              <h1 class="display-2 text-center">Message me here</h1><!--connect to bootstrap for where the text is going to be-->
+                              <p class="lead text-center">Ask me anything</p><!--connect to bootstrap for where the text is going to be-->
+                              <div class="row"> <!--connect to bootstrap for the row -->
+                                  <form id="form" class="col-lg-6 col-8 mx-auto"> <!--tells what row size it will be-->
+                                      <div class="input-group">  <!--sets the input class-->
+                                          <input id="input" class="form-control" placeholder="Enter todo list item" value=""><!--uses the input class-->
+                                          <span>
+                                              <button id="btn" type="button" class="btn btn-primary">Submit</button> <!--the bootstrap for the css of the button-->
+                                          </span>
+                                      </div>			     
+                                  </form>
+                              </div>
+                              <div class="row"> <!--connect to bootstrap for the row -->		
+                                  <ul id="list" class="list col-lg-6 col-8 mx-auto"> <!--tells what list size it will be-->
+                                  </ul>
+                              </div>
+                              <div class="row"> <!--connect to bootstrap for the row -->
+                                  <button id="btnClr" type="button" class="btn btn-primary mx-auto btnHide">Clear</button><!--the bootstrap for the css of the button-->
+                              </div>				
+                          </div>
+                      </div>
+
+          <ul class="links"> <!--connect the links css-->
+             <li>
+                <a href="https://github.com/alex150101"><i class="fab fa-github fa-3x"></i></a> <!--links to my github page -->
+                     <!-- and this links to the github icon on font awesome--> 
+            </li>
+          <li>
+                <a href="https://twitter.com/alexwhi78321600"><i class="fab fa-twitter fa-3x"></i></a><!--links to my twitter page -->
+            </li><!-- and this links to the twitter icon on font awesome--> 
+          <li>
+                <a href="https://codepen.io/Alex_White1501"><i class="fab fa-codepen fa-3x"></i></a><!--links to my codepen page -->
+            </li> <!-- and this links to the codepen icon on font awesome--> 
+            <li>
+              <a href="https://www.linkedin.com/in/alex-white-4194551a8/"><i class="fab fa-linkedin-in fa-3x"></i></a>  <!--links to my linkedin page -->
+            </li> <!-- and this links to the codepen icon on font awesome--> 
+        </ul>
+     </section> <!--tells it where this section ends-->
+     <section id="screen4" class="wide"> <!--connect to the css that set the section setting and show where section one is-->
+      <header><h1>My cv </h1>     <!--heading text for the section-->
+      <div class="container"> <!--connect to bootstrap-->
+        <div class="row"><!--connect to bootstrap for the row -->
+          <div class="col-sm"> <!--bootstrap css for the column size and where the column starts-->
+            <h2>Introduction</h2> <!--subheading-->
+            <p> Hello I am Alex White and I am currently studying Web Technologgy and Security at Northampton University. This is because
+              I believe that web design is a skill that would be valuable in aiding me in gaining employment in the future.</p>
+            <p>Organisations are reliant on having a professional online presence and I would like to be that professional that creates the website that
+             they need to stay relevant in this over saturated market.</p> <!--paragraph-->
+          </div>
+          <div class="col-sm"><!--bootstrap css for the column size and where the column starts-->
+            <h2>Work experience</h2><!--subheading-->
+            <p>Since October 2017, I have worked for the Waitrose Partnership on a part time basis. 
+              Waitrose encourages individuals to develop their skills, so I find myself doing something different
+               each time I work, from filling shelves, showing due diligence following the correct procedures in stock 
+               rotation to serving customers on the service tills.</p><!--paragraph-->
+          </div>
+          <div class="col-sm"> <!--bootstrap css for the column size and where the column starts-->
+            <h2>Skils</h2><!--subheading-->
+        <p>Git/GitHub<p> <p>VS Code</p> <p>Grid/Flexbox</p>  <p>Discord</p> <p>Zoom</p>  <p>Calendly</p>
+          </div>
+        </div>
+      </div>
+      
+    
+       
+      
+     </section>
+     <script type="text/javascript" src="main.js"></script> <!--references the javascript code-->
+</body>   
+
+  </html>
